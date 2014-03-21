@@ -3,6 +3,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('session');
   this.route('signUp', {path: '/sign-up'});
   this.route('dashboard');
   this.resource('clients', function() {
